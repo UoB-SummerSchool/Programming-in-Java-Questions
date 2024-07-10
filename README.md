@@ -249,3 +249,25 @@ int[][] SQUARE = {
 		{ 1,70,54,71,83,51,54,69,16,92,33,48,61,43,52, 1,89,19,67,48},
 	};
 ```
+
+<details>
+<summary>Hint 1 - you'll need a nested for loop for this one</summary>
+	
+```Java
+for (int y = 0; y < SQUARE.length; y++) {
+	for (int x = 0; x < SQUARE[y].length; x++) {
+ 		// Do stuff
+ 	}
+ }
+```
+</details>
+
+<details>
+<summary>Hint 2 - you'll need a nethod to check for array boundaries</summary>
+	
+```Java
+private static boolean isInBounds(int H, int W, int x, int y) {...}
+```
+</details>
+
+
