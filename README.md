@@ -119,3 +119,12 @@ $$sum2 = N(N + 1)(2N + 1) / 6$$
 $$sum^2 - sum2 = (N^4 / 4) + (N^3 / 6) - (N^2 / 4) - (N / 6)$$
 </details>
 
+<details>
+<summary>Hint 2 - Your for loop will look something like this</summary>
+	
+```Java
+for (int i = 1; i <= N; i++) {...} // where N = 100
+```
+</details>
+
+
