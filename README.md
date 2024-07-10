@@ -145,9 +145,8 @@ What is the $10\,001$ st prime number?
 <summary>Hint 1</summary>
 Computers are fast, so we can implement this solution by testing each number individually for primeness, instead of using the more efficient sieve of Eratosthenes.
 </details>
-<details>
 
- <details>
+<details>
 <summary>Hint 2 - make a method that return true if a number is prime</summary>
 	
 ```Java
@@ -177,6 +176,14 @@ public static boolean isPrime(int x) {
 		return true;
 	}
 }
+```
+</details>
+
+<details>
+<summary>Hint 4 - your for loop might look like this for counting primes</summary>
+	
+```Java
+for (int i = 2, count = 0; ; i++) {...}
 ```
 </details>
 
