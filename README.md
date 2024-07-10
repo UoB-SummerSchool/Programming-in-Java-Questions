@@ -4,6 +4,8 @@
 If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3, 5, 6$ and $9$. The sum of these multiples is $23$.
 Find the sum of all the multiples of $3$ or $5$ below $1000$.
 
+You might want to approach this by considering the sum of an arithmetic progression or by iterating from 1 to 1000 and adding the current number to the total if it is divisable by either 3 or 5.
+
 <details>
     <summary>Hint 1 - using arithmetic progression formula</summary>
     Since we need to find the sum of all multiples, it would make sense to list out all the
