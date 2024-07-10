@@ -136,3 +136,48 @@ sum2 += i * i;
 ```
 </details>
 
+=======================================================================================
+## [Problem 7](https://projecteuler.net/problem=7)
+By listing the first six prime numbers: $2, 3, 5, 7, 11$, and $13$, we can see that the $6$ th prime is $13$.
+
+What is the $10\,001$ st prime number?
+<details>
+<summary>Hint 1</summary>
+Computers are fast, so we can implement this solution by testing each number individually for primeness, instead of using the more efficient sieve of Eratosthenes.
+</details>
+<details>
+
+ <details>
+<summary>Hint 2 - make a method that return true if a number is prime</summary>
+	
+```Java
+public static boolean isPrime(int x) {...}
+```
+</details>
+
+<details>
+<summary>Hint 3 - here is a potential implementation</summary>
+	
+```Java
+// Tests whether the given non-negative integer is prime.
+public static boolean isPrime(int x) {
+	if (x < 0)
+		throw new IllegalArgumentException("Negative number");
+	if (x == 0 || x == 1)
+		return false;
+	else if (x == 2)
+		return true;
+	else {
+		if (x % 2 == 0)
+			return false;
+		for (int i = 3, end = sqrt(x); i <= end; i += 2) {
+			if (x % i == 0)
+				return false;
+		}
+		return true;
+	}
+}
+```
+</details>
+
+
