@@ -52,7 +52,7 @@ while (x <= 4000000) {...}
 </details>
 
 <details>
-<summary>Hint 3 - Use modulus operator ('%') to check for even numberss</summary>
+<summary>Hint 3 - Use modulus operator ('%') to check for even numbers</summary>
 	
 ```Java
 if (x % 2 == 0)
