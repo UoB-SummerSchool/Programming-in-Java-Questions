@@ -127,4 +127,12 @@ for (int i = 1; i <= N; i++) {...} // where N = 100
 ```
 </details>
 
+<details>
+<summary>Hint 3 - And it will contain something like this</summary>
+	
+```Java
+sum += i;
+sum2 += i * i;
+```
+</details>
 
