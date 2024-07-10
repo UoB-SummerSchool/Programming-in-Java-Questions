@@ -75,3 +75,10 @@ By the fundamental theorem of arithmetic, every integer n > 1 has a unique facto
 </details>
 
 =======================================================================================
+## [Problem 4](https://projecteuler.net/problem=4)
+A palindromic number reads the same both ways. The largest palindrome made from the product of two $2$-digit numbers is $9009 = 91 \times 99$.
+
+Find the largest palindrome made from the product of two $3$-digit numbers.
+
+The easiest way to do this problem is to convert the number into a String and then compare that String with a reversed version of it. Here are two helper methods:
+
