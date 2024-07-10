@@ -213,4 +213,6 @@ for (int i = 0; i <= nums.length - 5; i++) {...}
 </details>
 
 =======================================================================================
-## [Problem 11](https://projecteuler.net/problem=7=11)
+## [Problem 11](https://projecteuler.net/problem=11)
+
+![grid](grid.png)
