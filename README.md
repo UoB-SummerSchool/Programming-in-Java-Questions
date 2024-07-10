@@ -96,8 +96,26 @@ The easiest way to do this problem is to convert the number into a String and th
 ```
 
 =======================================================================================
-## [Problem 5](https://projecteuler.net/problem=5)
-$2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any remainder.
+## [Problem 6](https://projecteuler.net/problem=6)
+The sum of the squares of the first ten natural numbers is,
 
-What is the smallest positive number that is **evenly divisible** (divisible with no remainder) by all of the numbers from $1$ to $20$?
+$$1^2 + 2^2 + \dots + 10^2 = 385.$$
+
+The square of the sum of the first ten natural numbers is,
+
+$$(1 + 2 + \dots + 10)^2 = 55^2 = 3025.$$
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $3025 - 385 = 2640$.
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+<details>
+<summary>Hint 1</summary>
+Computers are fast, so we can implement this solution directly without any clever math.
+
+* However for the mathematically inclined, there are closed-form formulas:
+$$sum  = N(N + 1) / 2$$
+$$sum2 = N(N + 1)(2N + 1) / 6$$ 
+$$sum^2 - sum2 = (N^4 / 4) + (N^3 / 6) - (N^2 / 4) - (N / 6)$$
+</details>
 
