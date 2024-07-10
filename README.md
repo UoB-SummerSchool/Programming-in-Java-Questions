@@ -82,3 +82,22 @@ Find the largest palindrome made from the product of two $3$-digit numbers.
 
 The easiest way to do this problem is to convert the number into a String and then compare that String with a reversed version of it. Here are two helper methods:
 
+```Java
+	// Tests whether the given string is a palindrome.
+	public static boolean isPalindrome(String s) {
+		return s.equals(reverse(s));
+	}
+	
+	
+	// Tests whether the given integer is a palindrome in decimal (base 10).
+	public static boolean isPalindrome(int x) {
+		return isPalindrome(Integer.toString(x));
+	}
+```
+
+=======================================================================================
+## [Problem 5](https://projecteuler.net/problem=5)
+$2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any remainder.
+
+What is the smallest positive number that is **evenly divisible** (divisible with no remainder) by all of the numbers from $1$ to $20$?
+
