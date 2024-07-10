@@ -8,6 +8,7 @@ You might want to approach this by considering the sum of an arithmetic progress
 
 <details>
     <summary>Hint 1 - using arithmetic progression formula</summary>
+	
     Since we need to find the sum of all multiples, it would make sense to list out all the
 	multiple of a number in a sequence. Since it is a sequence, we can discuss as to what type
 	of sequence it is. This one turns out to be an arithmetic progression. The sum of an A.P is
@@ -57,6 +58,20 @@ while (x <= 4000000) {...}
 ```Java
 if (x % 2 == 0)
 ```
+</details>
+
+=======================================================================================
+## [Problem 4](https://projecteuler.net/problem=2)
+The prime factors of $13195$ are $5, 7, 13$ and $29$.
+
+What is the largest prime factor of the number $600851475143$?
+
+### This one is much harder than the previous 2 and you may want to skip it
+
+<details>
+<summary>Hint 1</summary>
+
+By the fundamental theorem of arithmetic, every integer n > 1 has a unique factorization as a product of prime numbers. In other words, the theorem says that n = p_0 * p_1 * ... * p_{m-1}, where each p_i > 1 is prime but not necessarily unique. Now if we take the number n and repeatedly divide out its smallest factor (which must also be prime), then the last factor that we divide out must be the largest prime factor of n. For reference, 600851475143 = 71 * 839 * 1471 * 6857.
 </details>
 
 =======================================================================================
