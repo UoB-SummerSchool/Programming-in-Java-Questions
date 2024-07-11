@@ -1,4 +1,6 @@
-# Project Euler Questions 
+# Project Euler Problems
+
+The following problems have been taken from [Project Euler](https://projecteuler.net/). Links to the original questions are provided with each question and we have added extra code and hints to get you started. The first six questions require methods, loops, variables and decisions. The last additionally require use of arrays.  
 
 ## [Problem 1](https://projecteuler.net/problem=1)
 If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3, 5, 6$ and $9$. The sum of these multiples is $23$.
