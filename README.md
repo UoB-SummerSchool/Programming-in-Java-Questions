@@ -210,7 +210,8 @@ for (int i = 0; i <= nums.length - 5; i++) {...}
 <summary>Hint 2 - your inner for loop might look like this</summary>
 	
 ```Java
-for (int i = 0; i <= nums.length - 5; i++) {...}
+int product = 1;
+for(int j = i; j < i + 5; j++){...}
 ```
 </details>
 
