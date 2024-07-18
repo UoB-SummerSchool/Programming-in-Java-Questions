@@ -277,4 +277,55 @@ private static boolean isInBounds(int H, int W, int x, int y) {...}
 ```
 </details>
 
+=======================================================================================
+## [Problem 8](https://projecteuler.net/problem=8)
+The four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times 9 = 5832$.
 
+![grid](q8.png)
+
+
+**Find the thirteen adjacent digits in the $1000$-digit number that have the greatest product. What is the value of this product?**
+
+<details>
+<summary>Hint 1 -Here's the number for you as a String ...</summary>
+	
+```Java
+String NUMBER = "7316717653133062491922511967442657474235534919493496983520312774506326239578318016984801869478851843858615607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648950445244523161731856403098711121722383113622298934233803081353362766142828064444866452387493035890729629049156044077239071381051585930796086670172427121883998797908792274921901699720888093776657273330010533678812202354218097512545405947522435258490771167055601360483958644670632441572215539753697817977846174064955149290862569321978468622482839722413756570560574902614079729686524145351004748216637048440319989000889524345065854122758866688116427171479924442928230863465674813919123162824586178664583591245665294765456828489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987879927244284909188845801561660979191338754992005240636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450";
+	
+```
+</details>
+
+<details>
+<summary>Hint 2 Use nested for loops - the outer one to iterate over the big number and the inner one to calculate the product for the current window of adjacent digits...</summary>
+	
+```Java
+for (int i = 0; i + ADJACENT <= NUMBER.length(); i++) {
+    long prod = 1;
+    for (int j = 0; j < ADJACENT; j++){
+        // Do stuff
+    }
+}
+	
+```
+</details>
+
+<details>
+<summary>Hint 3 Use .charAt() and some askii value trickery to get the integer value from the current character in the string ...</summary>
+	
+```Java
+prod *= number.charAt(i + j) - '0';
+	
+```
+</details>
+
+### This is a really inefficient way to do this ...
+
+* Try another implementation where you multiply by the next digit entering the adjacency window from the right and divide by the one leaving from the left - you will need to manage zeros in a clever way ...
+* Try comparing the speed of your 2 implementations using something like this:
+
+```Java
+long startTime = System.nanoTime();
+methodToTime();
+long endTime = System.nanoTime();
+long duration = (endTime - startTime);
+```
