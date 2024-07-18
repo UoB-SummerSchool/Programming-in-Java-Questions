@@ -85,11 +85,15 @@ Find the largest palindrome made from the product of two $3$-digit numbers.
 The easiest way to do this problem is to convert the number into a String and then compare that String with a reversed version of it. Here are two helper methods:
 
 ```Java
+	// Reverses a String
+	public static String reverse(String s) {
+		return new StringBuilder(s).reverse().toString();
+	}
+
 	// Tests whether the given string is a palindrome.
 	public static boolean isPalindrome(String s) {
 		return s.equals(reverse(s));
 	}
-	
 	
 	// Tests whether the given integer is a palindrome in decimal (base 10).
 	public static boolean isPalindrome(int x) {
